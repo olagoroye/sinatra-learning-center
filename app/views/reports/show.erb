@@ -16,7 +16,7 @@
 
 </ul>
 
-<% if current_user == report.user %>
+<% if current_user == @report.user %>
 <a href= "/reports/<%= @report.id %>/edit">Edit Report</a>
 
     <form action="/reports/<%= @report.id %>" method="post">
