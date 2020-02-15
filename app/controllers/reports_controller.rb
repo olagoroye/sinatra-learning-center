@@ -75,7 +75,7 @@ class ReportsController < ApplicationController
         set_report
         if logged_in?
             if @report.user == current_user
-                @report.destroy(params[:report])
+                @report.destroy
                 redirect '/reports'
             else
             redirect '/reports'
