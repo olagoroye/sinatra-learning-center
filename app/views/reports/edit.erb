@@ -1,0 +1,38 @@
+
+<h2>Make your Edits</h2>
+
+<form action="/reports/<%= @report.id %>" method="post">
+
+   <input id="hidden" type="hidden" name="_method" value="patch">
+   
+   <div>
+   <label for="date">Date: </label>
+   <input type="date" name="report[date]" value="<%= @report.date %>">
+   </div>
+   
+   <div>
+   <label for="user_id">User_id: </label>
+   <input type="text" name="report[user_id]" value="<%= @report.user_id%>">
+   </div>
+   
+   <div>
+   <label for="subjects">Subjects: </label>
+   <input type="text" name="report[subjects]" value="<%= @report.subjects %>">
+   </div>
+   
+   <div>
+   <label for="comment">Comment: </label>
+   <input type="text" name="report[comment]" value="<%= @report.comment %>">
+   </div>
+   
+   <div>
+   <label for="due_date">Due_date: </label>
+   <input type="date" name="report[due_date]" value="<%= @report.due_date %>">
+   </div>
+   
+
+
+  <input type="submit" value="Save Changes">
+</form>
+
+

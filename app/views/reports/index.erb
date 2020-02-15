@@ -1,0 +1,17 @@
+All Report Created By Users
+
+<% @reports.each do |report| %>
+
+    
+    <h5><a href="/reports/<%= report.id %>"<%= report.date%></a></h5>
+    <br></br>
+    <%= report.user_id%></p>
+    <%= report.subjects%></p>
+    <p><%= report.comment%></p>
+    
+    <%= report.due_date%></p>
+    
+    <p>By<%= report.user.name%></p>
+   <br></br>
+
+   <% end %>
