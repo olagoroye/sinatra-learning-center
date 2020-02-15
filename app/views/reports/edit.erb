@@ -7,7 +7,7 @@
    
    <div>
    <label for="date">Date: </label>
-   <input type="date" name="report[date]" value="<%= @report.date %>">
+   <input type="date" name="report[date]" value="<%= @report.date.strftime("%Y-%m-%d") %>">
    </div>
    
    <div>
