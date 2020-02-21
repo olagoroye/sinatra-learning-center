@@ -1,5 +1,5 @@
 
-<h2>Make your Edits</h2>
+<h2>Edit Report</h2>
 
 <form action="/reports/<%= @report.id %>" method="post">
 
@@ -7,27 +7,27 @@
    
    <div>
    <label for="date">Date: </label>
-   <input type="date" name="report[date]" value="<%= @report.date.strftime("%Y-%m-%d") %>">
+   <input type="date" name="report[date]" value="<%= @report.date.strftime("%Y-%m-%d") %>"><br>
    </div>
    
    <div>
    <label for="user_id">User_id: </label>
-   <input type="text" name="report[user_id]" value="<%= @report.user_id%>">
+   <input type="text" name="report[user_id]" value="<%= @report.user_id%>"><br>
    </div>
    
    <div>
    <label for="subjects">Subjects: </label>
-   <input type="text" name="report[subjects]" value="<%= @report.subjects %>">
+   <input type="text" name="report[subjects]" value="<%= @report.subjects %>"><br>
    </div>
    
    <div>
    <label for="comment">Comment: </label>
-   <input type="text" name="report[comment]" value="<%= @report.comment %>">
+   <textarea type="text" name="report[comment]" value="<%= @report.comment %>"></textarea><br>
    </div>
    
    <div>
    <label for="due_date">Due_date: </label>
-   <input type="date" name="report[due_date]" value="<%= @report.due_date %>">
+   <input type="date" name="report[due_date]" value="<%= @report.due_date.strftime("%Y-%m-%d") %>"><br>
    </div>
    
 

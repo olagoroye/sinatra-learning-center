@@ -1,29 +1,16 @@
-HOW DO I GET STARTED WITH MY SINATRA PORTFOLIO PROJECT?
+# Sinatra Learning Center
+Sinatra learning center is a website built using the Sinatra DSL that uses an MVC structure and RESTful routes to allow a user to perform CRUD actions... it's a CMS of sorts!
+## Installation
+Here is how you install my project:
+```bash
+git clone https://github.com/learn-co-students sinatra-cms-app-assessment-online-web-ft-120919.git
 
-Ideate! What do you want to build?
-choose a domain you're familiar with!
-choose a domain you care about
-Wireframing & User Stories
-Write down your models, their attributes, and their associations
-As a user, I can .....
-A user should be able to .....
-What does your app do?
-
-
-
- NOW, WE CODE! * but NO controllers or views yet *
-Build your models
-Migrations
-Model classes
-Associations (& validations)
-Test your models and associations in the console
-create some seed data
-adjust migrations as needed
-NOW, CONSIDER CONTROLLERS AND VIEWS
-Start with your ApplicationController helpers - #logged_in? and #current_user
-add your login/signup/signout routes
-Build out controller routes for other models (add a controller for each model)
-
-Build views and controller actions based on the flow of your app, one step at a time, testing as you go!
-
-Use shotgun and pry (or raise/inspect) all the time!
+bundle install
+```
+## Usage
+Run `shotgun`.
+Head to `localhost:9393` and sign up, log in, and get started keeping track of your widgets!
+## Contributing
+Feel free to contribute!
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

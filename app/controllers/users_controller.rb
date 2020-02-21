@@ -10,12 +10,13 @@ class UsersController < ApplicationController
         # param, find_all users
         @user =User.find_by(name: params[:name], email: params[:email])
         # if password is valid log in user
-        if  @user.authenticate(params[:password])   
+        # if _the user exists AND is authenticated with the password 
+        if @user && @user.authenticate(params[:password])   
             session[:user_id] = @user.id
             puts session
             redirect "/users/#{@user.id}"
         else
-            # tell user password is incorrect and redirect
+            redirect '/login'
         end
     end
 
