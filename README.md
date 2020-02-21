@@ -12,5 +12,3 @@ Run `shotgun`.
 Head to `localhost:9393` and sign up, log in, and get started keeping track of your widgets!
 ## Contributing
 Feel free to contribute!
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
